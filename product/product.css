@@ -1,0 +1,1399 @@
+:root{
+    --gray-color: #F2F0F1;
+    --black-color: #000000;
+    --light-color: #ffffff;
+    --dark-color: #616060;
+    --yellow-color:#FFC633;
+
+
+
+}
+*{
+    
+    box-sizing: border-box;
+
+
+}
+body{
+    font-family: "Barlow Condensed", sans-serif;
+    background:white;
+    height: 100vh;
+    margin: 0;
+}
+header .bar{
+    background: #000000;
+    height: 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .bar h2{
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: auto;
+    color: var(--light-color);
+}
+header .bar a{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--light-color);
+}
+header .bar img{
+    margin: 0.625rem 6.25px 0.625rem 0;
+}
+header .mobile-nav{
+    display: none;
+}
+header nav{
+    height: auto;
+    margin-top: 1.25rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header nav .logo{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.38rem;
+    text-align: left;
+
+}
+header nav .titles, header nav .vectors{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+header nav .titles li a{
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.35rem;
+    text-align: left;
+    color: var(--blacK-color);
+
+}
+header nav input{
+    width: 40%;
+    height: auto;
+    padding: 0.75rem 1rem;
+    gap: 0.75rem;
+    border-radius: 3.8rem;
+    border: none;
+    background-color: var(--gray-color);
+}
+header nav input .search-icon::before{
+    content: url("../home/home-images/search.svg")
+}
+.large-line{
+    width: 86%;
+    border: 1px solid var(--gray-color);
+    margin-top: 1rem;
+
+}
+section{
+    width: 100%;
+}  
+.single-product .arrows{
+    display: flex;
+    justify-content: space-around; 
+    width: 16%;
+    gap: 0.1rem;
+    height: auto;
+    list-style: none;
+    margin-left:2.5rem;
+
+}
+
+.single-product .arrows li{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark-color);
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.35rem;
+    text-align: left;
+}
+.single-product .hero-sec{
+    width: 94%;
+    display: flex;
+    justify-content: space-around;
+}
+.single-product .hero-sec .left img{
+    width: 90%;
+    height: auto;
+}
+
+.single-product .right .right-up h1{
+    font-family: Oswald, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3;
+    text-align: left;
+    width: 31rem;
+    height: 3rem;
+    margin-bottom: 4rem;
+}
+.single-product .right .right-up p{
+    width: 90%;
+    height: auto;
+}
+.single-product .right .right-up h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.single-product .right .right-up i{
+    font-weight: 1rem;
+    color: var(--yellow-color);
+}
+/*
+.single-product .hero-sec .left .left-left{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+.single-product .hero-sec .left .left-left img{
+    width: 152px;
+}
+.single-product .hero-sec .right{
+    width: 600px;
+    height: 530px;
+}
+.single-product .hero-sec .right .rating .title{
+    font-family: Oswald, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+    width: 600px;
+    height: 48px;
+}
+.single-product .hero-sec .right .rating .stars{
+    list-style: none;
+    display: flex;
+    margin: 0 0 0 -40px;
+
+}
+.single-product .hero-sec .right .rating .stars .star{
+    width: 24.71px;
+    height: 24.71px;
+    margin: 1px;
+}
+.single-product .hero-sec .right .rating .stars .frac{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.9px;
+    text-align: left;
+        
+    
+}
+.single-product .hero-sec .right .rating .try, .also-liked .T-shirt-card .try{
+    width: 205px;
+    height: 32px;
+    display: flex;
+    gap: 10px;
+
+}
+.single-product .hero-sec .right .rating h1, .also-liked .T-shirt-card h1{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.4px;
+    text-align: left;
+    font-family: "Barlow Condensed", sans-serif; 
+}
+.single-product .hero-sec .right .rating h1 .instead, .also-liked .T-shirt-card .instead{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.4px;
+    text-align: left;
+    text-decoration: line-through;
+    color: #c7c7c7;
+    margin: 5px 0 0 5px;
+}
+.single-product .hero-sec .right .rating h1 .discount, .also-liked .T-shirt-card .discount{
+    background: #ffebeb;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18.9px;
+    width: 62px;
+    height: 28px;
+    padding: 6px 12px;
+    border-radius: 62px;
+    margin: -20px 0 -10px 5px;
+    color: #ff4a4a;
+}
+.single-product .hero-sec .right .rating p{
+    font-family: "Barlow Condensed", sans-serif;
+    width: 358px;
+    height: 50px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 30px 0 10px 0;
+    color: var(--dark-color);
+}*/
+.line{
+    width: 100%;
+    margin: auto;
+    border: 1px solid var(--gray-color);
+}
+.single-product .hero-sec .right{
+    width: 50%;
+}
+/*.single-product .hero-sec .right .sub-title{
+    width: 93px;
+    height: 11px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: left;
+    color: var(--dark-color);
+}*/
+.single-product .hero-sec .left img{
+    max-width: 80%;
+
+}
+.single-product .hero-sec .right ul{
+    list-style: none;
+    display: flex;
+    align-items: center; 
+    width: 8.9rem;
+    height: 2.3rem;
+    gap: 1rem;
+    margin: 1.25rem 0 1.25rem -2.5em;
+}
+.single-product .hero-sec .right ul li button{
+    width: 5.4rem;
+    height: 2.5rem;
+    padding: 0.4rem 1.5rem;
+    border-radius: 3.875rem;
+    border: none;
+    background: var(--gray-color);
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.3rem;
+    text-align: center;
+}
+.single-product .hero-sec .right ul li button:hover{
+    background: var(--black-color);
+    color: var(--light-color);
+}
+.single-product .hero-sec .right .add-subtract button{
+    border: none;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.single-product .hero-sec .right .add-subtract button:hover{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: #2d2c2c7d;
+    transition: 0.5s ease;
+
+}
+.single-product .hero-sec .right .cart-stuff{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+}
+.single-product .hero-sec .right .add-subtract{
+    display: flex;
+    margin-top: 0.625rem;
+    margin: 0.625rem 0;
+    width: 25%;
+    height: 2.5rem;
+    padding: 1rem 1.25rem;
+    border-radius: 3.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--gray-color);
+    border: none;
+}
+.single-product .hero-sec .right .cart-stuff .add-to-cart{
+    width: 65%;
+    height: 2.5rem;
+    margin: 0.625rem;
+    padding: 0.625rem 3.3rem;
+    border-radius: 3.8rem;
+    background: var(--black-color);
+    text-decoration: none;
+    text-align: center;
+    color: var(--light-color);
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.35rem;
+    border: none;
+
+}
+.single-product .wrapper{
+    width: 100%;
+}
+.single-product .wrapper .tabs ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: 5rem 7.5rem 0.3rem 3.125rem;
+
+}
+.single-product .wrapper .tabs .large-line{
+    width: 87%;
+    border: 1px solid var(--gray-color);
+}
+.single-product .wrapper .tabs ul li{
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.375rem;
+    text-align: left;
+    color: var(--dark-color);
+}
+.single-product .wrapper .tabs ul li:hover{
+    color: var(--black-color);
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0,5s ease;
+}
+.single-product .wrapper .all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5.6rem;
+}
+.single-product .wrapper .all .review h1{
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-align: left;
+
+}
+.single-product .wrapper .all .review h1 span{
+    width: 2.06rem;
+    height: 0.69rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.375rem;
+    text-align: left;
+    color: var(--dark-color);
+}
+.single-product .wrapper .all .settings ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 22.4rem;
+    height: auto;
+    gap: 0.625rem;
+
+
+}
+.single-product .wrapper .all .settings ul a{
+    text-decoration: none;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+.single-product .wrapper .all .settings ul .set{
+    background: var(--gray-color);
+    width: 3rem;
+    height: 3rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+}
+.single-product .wrapper .all .settings ul .img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.single-product .wrapper .all .settings ul .two{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--gray-color);
+    width: 7.5rem;
+    height: 3rem;
+    padding: 1rem 1.25rem;
+    border-radius: 3.8rem;
+
+}
+.single-product .wrapper .all .settings ul .write{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--black-color);
+    width: 10.3rem;
+    height: 3rem;
+    padding: 1rem 1.25rem;
+    border-radius: 3.875rem;
+
+}
+.single-product .wrapper .all .settings ul .write a{
+    color: var(--light-color);
+}
+.single-product .wrapper .reviews{
+    width: 88%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    align-items: center;
+    margin: 0 5rem;
+}
+.single-product .wrapper .reviews ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+}
+.single-product .wrapper .reviews .user-review{
+    height: 18rem;
+    padding: 1.5rem;
+    border-radius: 20px;
+    border: 1px solid var(--gray-color);
+    font-family: "Barlow Condensed", sans-serif;
+    color: var(--dark-color);
+    text-align: left;
+}
+.single-product .wrapper .reviews .user-review p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    height: 4.125rem;
+    
+}
+.single-product .wrapper .reviews .user-review h1{
+    margin-top: 5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    text-align: left;
+}
+.single-product .wrapper .reviews .user-review .star{
+    display: flex;
+    justify-content: space-between;
+}
+.single-product .wrapper .reviews .user-review .stars{
+    margin: 0 0 0 -2.5em;
+}
+.single-product .wrapper .reviews .user-review ul .name{
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.4rem;
+    text-align: left;
+    margin: 0 0.3em 0 -2.5em;
+    color: var(--black-color);
+
+}
+.single-product .wrapper .load{
+    margin: 2.5rem auto;
+    width: 16%;
+    height: auto;
+    padding: 0.9rem 2.5rem 0.9rem 4.3rem;
+    border-radius: 3.875rem;
+    border: 1px solid var(--gray-color);
+
+}
+.single-product .wrapper .load a{
+    text-decoration: none;
+    font-family:"Barlow Condensed", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+    text-align: center;
+    color: var(--black-color);
+}
+.single-product .also-liked{
+    font-family:"Barlow Condensed", sans-serif;
+    margin-bottom: 6rem;
+}
+.single-product .also-liked .product-list i{
+    color: var(--yellow-color);
+
+}
+.single-product .also-liked .group-2.hidden{
+    display: none;
+}
+section .line{
+    width: 86%;
+    border: 1px solid var(--gray-color);
+
+}
+
+.single-product .also-liked .product-list .group-1, 
+.single-product .also-liked .group-2.visible{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: auto;
+    
+}
+.single-product .also-liked .product-list  li{
+    border: 1px solid var(--gray-color);
+    max-width: 90%;
+    padding: 2%;
+    border-radius: 3rem;
+    margin: 1rem;
+    height: 30rem;
+}
+.single-product .also-liked .product-list img{
+    max-width: 50%;
+    height: 12.5rem;
+    display: flex;
+    margin:auto;
+}
+.single-product .also-liked .product-list h2 {
+    height: 4rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+.single-product .also-liked .product-list .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.75rem;
+    
+}
+.single-product .also-liked .product-list button{
+    width: 15.2%;
+    height: auto;
+    padding: 1rem 3.375rem;
+    border-radius: 3.8rem;
+    border: none;
+    background: var(--light-color);
+    border: 1px solid var(--gray-color);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.35rem;
+    
+}
+.single-product .also-liked .product-list .link{
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #616060;
+    border: 1px solid var(--gray-color);
+    width: 3rem;
+    padding: 0.3rem;
+    border-radius: 0.9rem;
+}
+.single-product .also-liked .product-list .link:hover{
+    background: var(--gray-color);
+    font-size: 1.01rem;
+    transition: 0.09s ease;
+}
+.single-product .also-liked .product-list button:hover{
+    background: var(--gray-color);
+}
+.single-product .also-liked .title{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.6rem;
+    text-align: center;
+    margin-left: 3rem;
+}
+/*.single-product .also-liked .T-shirt-cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1240px;
+    margin: auto 100px 140px 50px;
+}
+.single-product .also-liked .T-shirt-cards ul{
+    list-style: none;
+    
+}
+.single-product .also-liked .T-shirt-cards .T-shirt-card{
+    width: 295px;
+}
+.single-product .also-liked .T-shirt-cards .stars{
+    display: flex;
+    margin: 0 0 0 -40px;
+}
+.single-product .also-liked .T-shirt-cards .stars .rate{
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.9px;
+    text-align: left;
+    color: var(--dark-color);
+
+}
+.single-product .also-liked .T-shirt-cards .big{
+    width: 100%;
+    height: auto;
+    top: 1991px;
+    left: 1045px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.single-product .also-liked .T-shirt-cards h1{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: left;
+
+}*/
+/* footer */
+footer .gray-box{
+    width: 100%;
+    height: auto;
+    background: var(--gray-color);
+    z-index: -1;
+    font-family:"Barlow Condensed", sans-serif;
+
+}
+footer .gray-box ul{
+    list-style: none;
+}
+footer .black-box{
+    z-index: 1;
+    background: var(--black-color);
+    width: 86%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    top: -5em;
+    border-radius: 1.25rem;
+}
+footer .black-box h1{
+    font-size: 3.1rem;
+    font-weight: 700;
+    line-height: 2.8rem;
+    text-align: left;
+    width: 30%;
+    height: auto;
+    color: var(--light-color);
+    margin-left: -1.1em;
+}
+footer .black-box .email-subscribe{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 0.9rem;
+}
+footer .black-box .email-subscribe  input, footer .black-box .email-subscribe button{
+    width: 100%;
+    height: auto;
+    padding: 0.75rem 1rem;
+    gap: 12px;
+    border-radius: 3.8rem;
+    border: none;
+    background: var(--light-color);
+}
+footer .black-box .email-subscribe input, footer .black-box .email-subscribe button{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.35rem;
+    text-align: left;
+}
+footer .black-box .email-subscribe button{
+    font-weight: 500;
+    text-align: center;
+
+}
+footer .gray-box .footer-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 86%;
+    height: auto;
+    margin-top: -1.875em;
+
+
+}
+footer .gray-box .footer-content .left-footer{
+    width: 17%;
+    height: auto;
+}
+footer .gray-box .footer-content .left-footer .same-title{
+    font-family: "Oswald",sans-serif;
+    font-size: 2.1rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    text-align: left;
+    margin: 0 0 1.25rem 0;
+}
+footer .gray-box .footer-content .left-footer .social-media{
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    margin: 1.25em 0 0.5rem -2.5em;
+}
+footer .gray-box .footer-content .right-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.9rem;
+}
+footer .gray-box .footer-content .right-footer .cat-title{
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.125rem;
+    letter-spacing: 0.2rem;
+    text-align: left;
+    margin: 0 0 1.25rem 0;
+}
+footer .gray-box .footer-content .right-footer .cat, footer .gray-box .footer-content .left-footer p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.1875rem;
+    text-align: left;
+    margin: 0 0 0.625rem 0;
+}
+footer .gray-box .footer-of-footer{
+    width: 86%;
+    display: flex;
+    justify-content: space-between;
+}
+footer .gray-box .footer-of-footer h2{
+    width: 16%;
+    height: auto;
+    font-size: 0.87rem;
+    font-weight: 400;
+    line-height: 1.18rem;
+    text-align: right;
+    margin: 1.875rem 0 0 4rem;
+}
+footer .gray-box .footer-of-footer .pay{
+    display: flex;
+    width: 15.8%;
+    height: auto;
+    gap: 0.5rem;
+}
+footer .line{
+    width: 86%;
+    border: 1px solid #c7c7c7;
+    margin: auto;
+}
+/*responsive version*/
+@media(min-width: 801px) and (max-width:1340px){
+    header nav input{
+        width: 30%
+    }
+    header nav .titles{
+        gap: 1.5rem;
+        margin-right: 0.3rem;
+    }
+    header nav .titles li a{
+        font-size: 0.65rem;;
+    }
+    .single-product .arrows{
+        width: 24%;
+    }
+    
+    .single-product .arrows li{
+        font-size: 0.7rem;
+    }
+    .single-product .wrapper .load{
+        border-radius: 2rem;
+        width: 21%;
+    
+    }
+    .single-product .wrapper .load a{
+        font-size: 0.75rem;
+        line-height: 1.2rem;
+    }
+    .single-product .right .right-up h1{
+        font-size: 1.5rem;
+        width: 25rem;
+        height: 3rem;
+        margin-bottom: 2rem;
+    }
+    .single-product .also-liked .product-list button{
+        width: 20%;
+        font-size: 0.9rem;;
+    }
+}
+@media(min-width: 290px) and (max-width:800px){
+    header{
+        height: auto;
+    }
+    header .bar{
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    header .bar h2, header .bar a{
+        font-family:"Barlow Condensed", sans-serif;
+        font-size: 0.75rem;
+        font-weight: 400;
+        line-height: 1rem;
+    }
+    header .bar img{
+        display: none;
+    }
+    header nav{
+        display: none;
+    }
+    
+    header .mobile-nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.625rem;
+        z-index: 2;
+    }
+    header .mobile-nav .menu-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.625rem;
+    }
+    header .mobile-nav .menu-icon.visible{
+        width: 1.2rem;
+        height: 0.9rem;
+        margin-top: 0.3rem;
+    }
+    header .mobile-nav .menu-icon.hidden{
+    display: none;
+    }
+    header .mobile-nav .menu-container.hidden{
+        display: none;
+    }
+    header .mobile-nav .menu-container.visible{
+        display: flex;
+        flex-direction: column;
+        background: var(--black-color);
+        gap: 0.25rem;
+        width: 100%;
+        height: auto;
+        z-index: 5;
+        position: fixed;
+        top: 1rem;
+        left: 0;
+        transition: 2s ease-in-out;
+        
+    }
+    header .mobile-nav .menu-container li{
+        list-style: none;
+        
+
+    }
+    header .mobile-nav .menu-container a{
+        text-decoration: none;
+        font-family:"Barlow Condensed", sans-serif;
+        color: var(--light-color);
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+    }
+    header .mobile-nav .menu-logo .logo{
+        font-family:"Barlow Condensed", sans-serif;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        margin-left: 3rem;
+    }
+    header .mobile-nav .rest ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.625rem;
+        list-style: none;
+    }
+    header .mobile-nav .rest ul img{
+        width: 1.125rem;
+        height: 1.125rem;
+    }
+    .line{
+        width: 90%;
+        border: 1px solid var(--gray-color);
+    
+    }
+    .header-line{
+        position: relative;
+        top: 1.5rem;
+        width: 86%;
+        border: 1px solid var(--gray-color);
+        margin-left: 1.5rem;
+        
+    }
+    .large-line{
+        width: 90%;
+        margin-top: 1.87rem;
+    }
+ 
+    .single-product .arrows{
+        margin-left:0.125rem;
+        width: 13.4rem;
+        height: 1.25rem;
+        gap: 0.375rem;
+        margin-left: -1.875em;
+    
+    }
+    section .customers .customers-cards .customer .star{
+        font-size: 1.125rem;
+        margin:0;
+    }
+    .single-product .arrows li{
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--dark-color);
+        font-size: 0.75rem;
+        font-weight: 400;
+        line-height: 1.35rem;
+        text-align: left;
+    }
+    .single-product .hero-sec{
+        display: flex;
+        flex-direction: column;
+        padding: 0.625rem 1rem;
+    }
+    .single-product .hero-sec .left{
+        height: auto;
+        gap: 0.625rem;
+        margin: auto;
+        padding: 0.3rem;
+    }
+   /* .single-product .hero-sec .left .left-right img{
+        width: 358px;
+        height: 290px;
+        
+    }
+    .single-product .hero-sec .left .left-left img{
+        width: 111px;
+        height: 106px;
+    }*/
+    .single-product .right .right-up h1{
+        font-size: 1.5rem;
+        width: 25rem;
+        height: 3rem;
+        margin-bottom: 2rem;
+    }
+    .single-product .also-liked{
+        overflow: hidden;
+    }
+
+    .single-product .also-liked .product-list .group-1, 
+    .single-product .also-liked .group-2.visible{
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+        
+    }
+    .single-product .also-liked .product-list  ul{
+        margin-left: -0.5em;
+    }
+    .single-product .also-liked .product-list  li{
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+        padding-left: 0.5rem;
+        border-radius: 2rem;
+        margin: 1rem 1rem 1rem 0.1rem;
+        height: 24rem;
+        width: 95%;
+    }
+    .single-product .also-liked .product-list img{
+        max-width: 60%;
+        height: 12rem;
+    }
+    .single-product .also-liked .product-list h2{
+        height: 3rem;
+        margin-bottom: 0.5rem;
+        font-size: 0.75rem;
+    }
+    .single-product .also-liked .product-list button{ 
+        width: 86%;
+        margin-left: 0.5rem;
+    }
+    .single-product .hero-sec .right{
+        width: 100%;
+        height: auto;
+    }
+    /*.single-product .hero-sec .right .rating .title{
+        width: 267px;
+        height: 56px;
+        font-size: 24px;
+
+    }
+    .single-product .hero-sec .right .rating .stars{
+        width: 154px;
+        height: 19px;
+        gap: 7px;
+    }
+    .single-product .hero-sec .right .rating .stars .star{
+        width: 18.67px;
+        height: 18.67px        
+    }
+    .single-product .hero-sec .right .rating .stars .frac{
+        width: 33px;
+        height: 19px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18.9px;
+        text-align: left;
+    }
+        .also-liked .T-shirt-card h1{
+        width: 205px;
+        height: 32px;
+        gap: 10px;
+
+    }
+    .single-product .hero-sec .right .rating h1 .instead, .also-liked .T-shirt-card .instead{
+        text-decoration: line-through;
+        color: #c7c7c7;
+        margin: 0 0 0 5px;
+        font-size: 14px;
+    }
+    .single-product .hero-sec .right .rating h1 .discount, .also-liked .T-shirt-card .discount{
+
+        font-size: 14px;
+        line-height: 18.9px;
+    }
+    .single-product .hero-sec .right .rating p{
+        width: 358px;
+        height: 50px;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }*/
+    .line{
+        width: 90%;
+        margin: 0 0 0 -1px;
+        border: 1px solid var(--gray-color);
+    }
+    .single-product .hero-sec .right .sub-title{
+        width: 5.8rem;
+        height: 0.68rem;
+        font-size: 0.9rem;
+        line-height: 1.18rem;
+    }
+    .single-product .hero-sec .right ul{
+        list-style: none;
+        display: flex;
+        align-items: center; 
+        width: 8.9rem;
+        height: 2.3rem;
+        gap: 1rem;
+        margin: 1.25rem 0 1.25rem -2.5em;
+    }
+
+    .single-product .hero-sec .right .size button{
+        width: 100%;
+        height: auto;
+        padding: 0.625rem 1.25rem;
+        gap: 0.7rem;
+        border-radius: 3.8rem;
+        line-height: 1.18rem;
+        font-size: 0.75rem;
+    }
+    /*.single-product .hero-sec .right .add-subtract{
+        gap: 0.9rem;
+    }
+    .single-product .hero-sec .right .add-subtract button{
+        width: 0.9rem;
+        height: 0.9rem;
+        padding: 0.5rem;
+        border-radius: 50%;
+    }
+    .single-product .hero-sec .right .add-subtract a{
+        width: 236px;
+        height: 44px;
+        padding: 13px 54px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 18.9px;
+    }*/
+    .single-product .hero-sec .right .cart-stuff{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.rem;
+        width: 100%;
+    }
+    .single-product .hero-sec .right .add-subtract{
+        display: flex;
+        margin-top: 0;
+        margin: 0.25rem 0.25rem 0.25rem 0.7rem;
+        width: 50%;
+        height: 2.5rem;
+        padding: 0.25rem;
+        border-radius: 3.8rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: var(--gray-color);
+        border: none;
+    }
+    .single-product .wrapper .tabs ul{
+        gap: 0.625rem;
+        margin: 1.25rem 1.25rem 0.625rem -1.87rem;
+    
+    }
+    .single-product .wrapper .tabs .large-line{
+        margin-left: 1.25rem;
+    }
+    .single-product .wrapper .tabs ul li{
+        font-size: 16px;
+    }
+    .single-product .wrapper .all{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 1.25rem;
+    }
+    
+    .single-product .wrapper .all .review h1{
+        width: 6.8rem;
+        font-size: 1.125rem;
+        line-height: 1.68rem;
+    }
+    .single-product .wrapper .all .review h1 span{
+        width: 1.25rem;
+        height: 0.625rem;
+        font-size: 0.75rem;
+    }
+    .single-product .wrapper .all .settings ul{
+        width: 16rem;
+        height: 3rem;
+    
+    
+    }
+    .single-product .wrapper .all .settings ul a{
+        font-size: 0.75rem;
+    }
+    .single-product .wrapper .all .settings ul .set{
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-left: 1.25rem;
+    }
+    .single-product .wrapper .all .settings ul .img{
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+    .single-product .wrapper .all .settings ul .two{
+        display: none;
+    }
+    .single-product .wrapper .all .settings ul .write{
+        width: 6.5rem;
+        height: 2.5rem;
+        padding: 0.75rem 1rem;
+        margin-left: -5.25rem;
+    }
+    .single-product .wrapper .reviews{
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        align-items: center;
+        margin: 0;
+    }
+    .single-product .wrapper .reviews .user-review{
+        height: auto;
+        padding: 1.5rem;
+    }
+    .single-product .wrapper .reviews .hidden{
+        display: none;
+    }
+    .single-product .wrapper .reviews .user-review p,.single-product .wrapper .reviews .user-review h1{
+        font-size: 1rem;
+        line-height: 1rem;
+        margin-bottom: 2rem;
+    }
+    .single-product .wrapper .reviews .user-review h1{
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+    .single-product .wrapper .reviews .user-review .star{
+        display: flex;
+        justify-content: space-between;
+    }
+    .single-product .wrapper .reviews .user-review .stars{
+        margin: 0 0 0 -2.5em;
+    }
+    .single-product .wrapper .reviews .user-review ul .name{
+        font-size: 1rem;
+    
+    }
+    .single-product .wrapper .load{
+        margin: 1.25rem auto;
+        width: 12.2rem;
+        height: 3rem;
+        padding: 0.9rem 2.125rem 1.2rem 3rem;
+    }
+    .single-product .wrapper .load a{
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+    .single-product .also-liked{
+        overflow: hidden;
+        margin-bottom: 9rem;
+    }
+    .single-product .also-liked .title{
+            font-family: "Barlow Condensed", sans-serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            line-height: 2.2rem;
+            text-align: left;
+
+    }
+    /*.single-product .also-liked .T-shirt-cards{
+        width: 800px;
+        margin-left: -25px;
+        margin-bottom: 130px;
+        overflow: hidden;
+        gap: 10px;
+    }
+    .single-product .also-liked .T-shirt-cards .T-shirt-card{
+        width: 198px;
+    }
+    .single-product .also-liked .T-shirt-cards .stars{
+        display: flex;
+        margin: 0 0 0 -40px;
+    }
+    .single-product .also-liked .T-shirt-cards .big{
+        width: 100%;
+        height: auto;
+        top: 1991px;
+        left: 1045px;
+        border-radius: 20px;
+        object-fit: cover;
+    
+    }
+    .single-product .also-liked .T-shirt-cards .big img{
+        width: 198px;
+        height: 200.01px;
+        border-radius: 13.42px;
+    }
+    .single-product .also-liked .T-shirt-cards h1{
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 21.6px;
+    }*/
+    footer .gray-box{
+        width:100%;
+        height: 58rem;
+    
+    }
+    footer .gray-box ul{
+        list-style: none;
+    }
+    footer .black-box{
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        top: -7.5rem;
+        border-radius: 1.25rem;
+    }
+    footer .black-box h1{
+        font-size: 2.8rem;
+        font-weight: 700;
+        line-height: 2.375rem;
+        text-align: left;
+        width: 76%;
+        margin-left: 0.3rem;
+        margin-bottom: 1rem;
+    }
+    footer .black-box .email-subscribe{
+        gap: 0.9rem;
+        display: grid;
+        justify-content: center;
+
+    }
+    footer .black-box .email-subscribe input, footer .black-box .email-subscribe button{
+        width: 85%;
+        height: auto;
+        margin-right: 2.5rem;
+    }
+    footer .black-box .email-subscribe input{
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+    }
+    footer .black-box .email-subscribe button{
+        font-size: 0.9rem;
+        line-height: 1.3rem; 
+    }
+    footer .gray-box .footer-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 22.3rem;
+        height: auto;
+        margin-bottom: 1.25rem;
+        margin-top: -3.125em;
+        padding: 0 1.9rem 0 0;
+    
+    
+    }
+    footer .gray-box .footer-content .left-footer{
+        width: 15.5rem;
+        height: auto;
+        gap: 2.2rem;
+    }
+    footer .gray-box .footer-content .left-footer .same-title{
+        font-size: 1.8rem;
+        line-height: 2.16rem;
+
+    }
+    footer .gray-box .footer-content .left-footer .social-media{
+        margin: 0 0 1.8rem -2.5em;
+    }
+    footer .gray-box .footer-content .left-footer .social-media img{
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+    footer .gray-box .footer-content .right-footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.8rem;
+    }
+    footer .gray-box .footer-content .right-footer .cat-title{
+        font-size: 0.9rem;
+    }
+
+    footer .gray-box .footer-of-footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer .gray-box .footer-of-footer h2{
+        font-size: 90%;
+        font-weight: 400;
+        line-height: 1.3rem;
+        text-align: right;
+        margin: 0.625rem -1em 0 0;
+        width: 18.5rem
+    }
+    footer .gray-box .footer-of-footer .pay{
+        display: flex;
+        gap: 0.25rem;
+        margin: auto;
+    }
+    footer .gray-box .footer-of-footer .pay{
+        width: 90%;
+        height: 1.625rem;
+        padding: 0.53rem 0.38rem 0.513rem 0.375rem;
+        border-radius: 0.3rem;
+        margin: auto;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
